@@ -1,0 +1,86 @@
+[
+    {
+        "id": 0,
+        "year": 2014,
+        "km_driven": 35000,
+        "fuel": 0,
+        "transmission": 0,
+        "mileage": 20,
+        "engine": 35,
+        "max_power": 70,
+        "seats": 4,
+        "predict": 135000
+    },
+    {
+        "id": 1,
+        "year": "2005",
+        "km_driven": "55000",
+        "fuel": "0",
+        "transmission": "0",
+        "mileage": "50",
+        "engine": "1000",
+        "max_power": "90",
+        "seats": "4",
+        "predict": 736083
+    },
+    {
+        "id": 2,
+        "year": "2019",
+        "km_driven": "200000",
+        "fuel": "1",
+        "transmission": "0",
+        "mileage": "50",
+        "engine": "300",
+        "max_power": "75",
+        "seats": "5",
+        "predict": 721235
+    },
+    {
+        "id": 3,
+        "year": "2019",
+        "km_driven": "55000",
+        "fuel": "1",
+        "transmission": "0",
+        "mileage": "25",
+        "engine": "1000",
+        "max_power": "90",
+        "seats": "8",
+        "predict": 673393
+    },
+    {
+        "id": 4,
+        "year": "2019",
+        "km_driven": "200000",
+        "fuel": "1",
+        "transmission": "0",
+        "mileage": "25",
+        "engine": "1000",
+        "max_power": "90",
+        "seats": "6",
+        "predict": 583246
+    },
+    {
+        "id": 5,
+        "year": "2019",
+        "km_driven": "200000",
+        "fuel": "0",
+        "transmission": "0",
+        "mileage": "25",
+        "engine": "1000",
+        "max_power": "75",
+        "seats": "5",
+        "predict": 461466
+    },
+    {
+        "id": 6,
+        "year": "2005",
+        "km_driven": "55000",
+        "fuel": "0",
+        "transmission": "0",
+        "mileage": "25",
+        "engine": "1000",
+        "max_power": "90",
+        "seats": "4",
+        "predict": 374367
+    }
+]

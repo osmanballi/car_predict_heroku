@@ -1,0 +1,114 @@
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<html lang="en">
+  <div class="h1 pt-5" style="color:rgb(85, 18, 18)">Predict Car Price</div>
+  <body class="text-center" style="background-image: url('https://i1.wp.com/qroo.us/wp-content/uploads/2018/11/iStock-813580690.jpg?fit=2120%2C1193&ssl=1'); background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+    <div class="container pt-4 mx-auto " style="width:400px"> 
+      <div class="div">
+        <form action="{{ url_for('predict')}}"method="post">
+        <div class="form-group">
+          <!-- <label for="exampleFormControlSelect1">Year</label> -->
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Year</label>
+            </div>
+            <input type="text" name="year" class="form-control" placeholder="Exp. 2005">
+          </div>
+
+          <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Km Driven</label>
+          </div>
+          <input type="text" name="km_driven" class="form-control" placeholder="Exp. 55000">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Fuel</label>
+            </div>
+            <select name="fuel" class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="0">Diesel</option>
+              <option value="1">Petrol</option>
+              <option value="2">LPG</option>
+              <option value="3">CNG</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Transmission</label>
+            </div>
+            <select name="transmission" class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="0">Manuel</option>
+              <option value="1">Automatic</option>
+            </select>
+          </div>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Mileage</label>
+            </div>
+            <input type="text" name="mileage" class="form-control" placeholder="Exp. 25">
+          </div>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Engine</label>
+            </div>
+            <input type="text" name="engine" class="form-control" placeholder="Exp. 1000">
+          </div>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Max Power</label>
+            </div>
+            <input type="text" name="max_power" class="form-control" placeholder="Exp. 90">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Seats</label>
+            </div>
+            <select name="seats" class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="2">Two</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine</option>
+              <option value="10">Ten</option>
+              <option value="14">Fourteen</option>
+            </select>
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1> <span class="badge badge-secondary">{{ prediction_text }}</span></h1>
+    </form>
+    </div>
+    </form>
+  </body>
+</html>
